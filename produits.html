@@ -1,0 +1,92 @@
+
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Produits - Aya Fashion Shop</title>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+<header class="site-header small">
+  <img src="images/logo.png" alt="Aya Fashion Shop" class="logo"/>
+  <div class="brand">
+    <h1>Aya Fashion Shop</h1>
+    <p class="slogan">Ton élégance, notre priorité</p>
+  </div>
+</header>
+<nav class="main-nav">
+  <a href="index.html">Accueil</a>
+  <a href="produits.html">Boutique</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<main class="container">
+  <h2 class="section-title">Boutique</h2>
+  <section class="products">
+    <article class="card">
+      <div class="thumb"><img src="images/valise_bordeaux.png" alt="Valise bordeaux"/></div>
+      <h3>Valise bordeaux grande</h3>
+      <div class="price">60 000 FCFA</div>
+      <p>Coque rigide, roulettes 360°, finition premium.</p>
+      <button class="btn" onclick="addToCart('Valise bordeaux grande',60000)">Ajouter au panier</button>
+    </article>
+
+    <article class="card">
+      <div class="thumb"><img src="images/valisette_rouge.png" alt="Valisette rouge"/></div>
+      <h3>Valisette rouge moyenne</h3>
+      <div class="price">24 500 FCFA</div>
+      <p>Taille moyenne, design épuré, très résistante.</p>
+      <button class="btn" onclick="addToCart('Valisette rouge',24500)">Ajouter au panier</button>
+    </article>
+
+    <article class="card">
+      <div class="thumb"><img src="images/ballerines.png" alt="Ballerines"/></div>
+      <h3>Ballerines noires</h3>
+      <div class="price">9 500 FCFA</div>
+      <p>Confortables et élégantes pour toutes occasions.</p>
+      <button class="btn" onclick="addToCart('Ballerines noires',9500)">Ajouter au panier</button>
+    </article>
+
+    <article class="card">
+      <div class="thumb"><img src="images/pagne.png" alt="Pagne Baoulé"/></div>
+      <h3>Pagne Baoulé authentique</h3>
+      <div class="price">18 000 FCFA</div>
+      <p>Tissé main, motifs traditionnels Baoulé.</p>
+      <button class="btn" onclick="addToCart('Pagne Baoulé',18000)">Ajouter au panier</button>
+    </article>
+
+  </section>
+
+  <section id="cart" class="checkout" style="display:none;">
+    <h3>Récapitulatif de la commande</h3>
+    <div id="cartList"></div>
+    <div id="cartTotal" class="price">Total : 0 FCFA</div>
+
+    <label>Nom complet</label>
+    <input id="cname" placeholder="Ton nom"/>
+
+    <label>Numéro téléphone (Mobile Money)</label>
+    <input id="cphone" placeholder="+225 XX XX XX XX"/>
+
+    <label>Mode de paiement</label>
+    <select id="cpay">
+      <option>Wave</option>
+      <option>MTN Money</option>
+      <option>Orange Money</option>
+      <option>Moov Money</option>
+    </select>
+
+    <button class="btn primary" onclick="placeOrder()">Valider la commande</button>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div>Paiements acceptés : Wave • MTN Money • Orange Money • Moov Money</div>
+  <div>© 2025 Aya Fashion Shop — Tous droits réservés</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
