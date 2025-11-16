@@ -298,14 +298,4 @@
     cart = []; renderCart();
     document.getElementById('cart').style.display='none';
     document.getElementById('cname').value=''; document.getElementById('cphone').value='';
-  }
-</script>
-
-</body>
-</html>![Screenshot_20251115-210519](https://github.com/user-attachments/assets/e3a14255-1050-4271-bc57-cf2cbc9d775c)
-<img width="720" height="1600" alt="Screenshot_20251115-231314" src="https://github.com/user-attachments/assets/50b6b4aa-5d9a-4930-9268-4769d5439936" />
-<img width="720" height="1600" alt="Screenshot_20251115-233035" src="https://github.com/user-attachments/assets/242b6398-4ee5-4de8-a640-0c30f812e716" />
-<img width="720" height="1600" alt="Screenshot_20251116-001423" src="https://github.com/user-attachments/assets/ea224adc-cd6b-4c07-a7c5-624c0323ecf7" />
-<img width="720" height="1600" alt="Screenshot_20251116-002237" src="https://github.com/user-attachments/assets/2c4c79c8-1920-4dc0-897f-5cfe655af6ad" />
-<img width="720" height="1600" alt="Screenshot_20251116-003252" src="https://github.com/user-attachments/assets/ac92c341-bdfb-40b2-a1f3-41c77bca243a" />
-# Aya-fashionshop
+    
